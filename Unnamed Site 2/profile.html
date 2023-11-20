@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="admin.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div  align="center">
+      <h1><strong>Profil PAGE!</strong></h1>
+    </div>
+	<div align="center" class="button-container">
+  <button id="go-to-current-page-button" onclick="window.location.href = window.location.href;">Go to Current Page</button>
+			
+            <button id="go-to-home-page-button" onclick="window.location.href = 'mini.html';">Go to Home Page</button>
+</div>
+	
+	<div class="user-profile">
+            <img id="profile-pic" src="" alt="Profile picture" style="width: 200px; height: 300px;">
+            <h2 id="username"></h2>
+            <input type="file" id="profile-pic-" accept="image/*">
+            <button id="upload-profile-pic-button">
+            <p>Upload Profile Picture </p>
+				</button>
+				</div>
+			<div class="form-container">
+            <h1>Change Password</h1>
+	<form id="change-password-form">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br>
+
+		<label for="current-password">Current Password:</label>
+		<input type="password" id="current-password" name="current-password"><br>
+
+		<label for="new-password">New Password:</label>
+		<input type="password" id="new-password" name="new-password"><br>
+
+		<input type="submit" value="Change Password">
+	</form>
+        </div>
+
+<script src="profile.js"></script>
+</body>
+</html>
